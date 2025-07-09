@@ -48,7 +48,7 @@ public enum HudCmdType {
     }
 
 
-
-
-
+    public byte getTitle() {
+        return title;
+    }
 }
