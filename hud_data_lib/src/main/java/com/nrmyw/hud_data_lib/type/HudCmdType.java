@@ -40,6 +40,7 @@ public enum HudCmdType {
     WARNING_POINT_1_B_STR((byte)0x62),
     WARNING_POINT_2_T_STR((byte)0x63),
     WARNING_POINT_2_B_STR((byte)0x64),
+    REACH_STR((byte)0x65),
     ;
     private byte title;
 
