@@ -1,7 +1,7 @@
 package com.nrmyw.hud_data_lib.type.yellow_statu;
 
 public enum HudYellowStatuBjType {
-    DEF((byte) 0x00),
+    HIDE((byte) 0x00),
     STYLE_1((byte) 0x01),
     STYLE_2((byte) 0x02),
     STYLE_3((byte) 0x03),
