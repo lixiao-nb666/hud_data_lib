@@ -1,4 +1,4 @@
-package com.nrmyw.hud_data_lib.type;
+package com.nrmyw.hud_data_lib.type.type;
 
 public enum HudStatuType {
     //直接发送指令
