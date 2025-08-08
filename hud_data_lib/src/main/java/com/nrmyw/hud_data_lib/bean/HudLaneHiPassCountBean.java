@@ -6,6 +6,7 @@ import java.util.List;
 
 public class HudLaneHiPassCountBean implements Serializable {
     private List<Integer> laneList;
+    private int index;
 
     public List<Integer> getLaneList() {
         if(null==laneList){
@@ -24,10 +25,15 @@ public class HudLaneHiPassCountBean implements Serializable {
         laneList.add(type);
     }
 
+    public int getIndex() {
+        return index;
+    }
+
     @Override
     public String toString() {
-        return "LaneCountBean{" +
+        return "HudLaneHiPassCountBean{" +
                 "laneList=" + laneList +
+                ", index=" + index +
                 '}';
     }
 }

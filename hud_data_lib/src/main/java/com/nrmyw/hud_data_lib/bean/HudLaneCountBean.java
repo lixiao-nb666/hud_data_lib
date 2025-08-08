@@ -9,6 +9,8 @@ import java.util.List;
 
 public class HudLaneCountBean implements Serializable {
     private List<HudLaneType> laneList;
+    private int leftIndex;
+    private int rightIndex;
 
     public List<HudLaneType> getLaneList() {
         return laneList;
@@ -32,13 +34,30 @@ public class HudLaneCountBean implements Serializable {
         for(int i=0;i<needNumb;i++){
             add(HudLaneType.NONE);
         }
+    }
 
+    public int getLeftIndex() {
+        return leftIndex;
+    }
+
+    public void setLeftIndex(int leftIndex) {
+        this.leftIndex = leftIndex;
+    }
+
+    public int getRightIndex() {
+        return rightIndex;
+    }
+
+    public void setRightIndex(int rightIndex) {
+        this.rightIndex = rightIndex;
     }
 
     @Override
     public String toString() {
-        return "LaneCountBean{" +
+        return "HudLaneCountBean{" +
                 "laneList=" + laneList +
+                ", leftIndex=" + leftIndex +
+                ", rightIndex=" + rightIndex +
                 '}';
     }
 }
