@@ -2,11 +2,11 @@ package com.nrmyw.hud_data_lib.type.yellow_statu;
 
 public enum HudYellowStatuBjType {
     HIDE((byte) 0x00),
-    STYLE_1((byte) 0x01),
+    STYLE_T800((byte) 0x01),
     STYLE_2((byte) 0x02),
     STYLE_3((byte) 0x03),
     STYLE_4((byte) 0x04),
-    STYLE_5((byte) 0x05),
+    STYLE_T700((byte) 0x05),
     STYLE_6((byte) 0x06),
     STYLE_7((byte) 0x07),
     STYLE_8((byte) 0x08),

@@ -81,6 +81,59 @@ public enum HudLaneType {
     D_N("2",(byte)0x4D),//地下直行未选择
     LT_N("10",(byte)0x4E),//左调头未选择
     LT_Y("11",(byte)0x4F),//左调头选择
+    //----分割线
+    C_LT_Y("c_11",(byte)0x50),//左调头选择
+    C_L_Y("c_21",(byte)0x51),//左转选择
+    C_LF_Y("c_31",(byte)0x52),//左前选择
+    C_F_Y("c_41",(byte)0x53),//直行选择
+    C_RF_Y("c_51",(byte)0x54),//右前选择
+    C_R_Y("c_61",(byte)0x55),//右拐选择
+    C_L_T_Y_T("c_1201",(byte)0x56),//可左拐调头选择调头
+    C_L_T_Y_L("c_1210",(byte)0x57),//可左拐调头选择左拐
+    C_L_T_Y("c_1211",(byte)0x58),//可左拐调头都行
+    C_LF_T_Y_T("c_1301",(byte)0x59),//可左前调头选择调头
+    C_LF_T_Y_LF("c_1310",(byte)0x5A),//可左前调头选择左前
+    C_LF_T_Y("c_1311",(byte)0x5B),//可左前调头都行
+    C_F_LT_Y_T("c_1401",(byte)0x5C),//可直行调头选择调头
+    C_F_LT_Y_F("c_1410",(byte)0x5D),//可直行调头选择直行
+    C_F_LT_Y("c_1411",(byte)0x5E),//可直行调头都行
+    C_LT_RF_Y_LT("c_1501",(byte)0x5F),//可左掉头右前选择调头
+    C_LT_RF_Y_RF("c_1510",(byte)0x60),//可左掉头右前选择右前
+    C_LT_RF_Y("c_1511",(byte)0x61),//可左掉头右前都行
+    C_R_T_Y_T("c_1601",(byte)0x62),//可右拐调头选择调头
+    C_R_T_Y_R("c_1610",(byte)0x63),//可右拐调头选择右拐
+    C_R_T_Y("c_1611",(byte)0x64),//可右拐调头都行
+    C_L_LF_Y_L("c_2301",(byte)0x65),//可左拐左前选择左拐
+    C_L_LF_Y_LF("c_2310",(byte)0x66),//可左拐左前选择左前
+    C_L_LF_Y("c_2311",(byte)0x67),//可左拐左前都行
+    C_L_F_Y_L("c_2401",(byte)0x68),//可左拐直行选择左拐
+    C_L_F_Y_F("c_2410",(byte)0x69),//可左拐直行选择直行
+    C_L_F_Y("c_2411",(byte)0x6A),//可左拐直行都行
+    C_L_RF_Y_L("c_2501",(byte)0x6B),//可左拐右前选择左拐
+    C_L_RF_Y_RF("c_2510",(byte)0x6C),//可左拐右前选择右前
+    C_L_RF_Y("c_2511",(byte)0x6D),//可左拐右前都行
+    C_L_R_Y_L("c_2601",(byte)0x6E),//可左拐右拐选择左拐
+    C_L_R_Y_R("c_2610",(byte)0x6F),//可左拐右拐选择右拐
+    C_L_R_Y("c_2611",(byte)0x70),//可左拐右拐都行
+    C_LF_F_Y_LF("c_3401",(byte)0x71),//可左前直行选择左前
+    C_LF_F_Y_F("c_3410",(byte)0x72),//可左前直行选择直行
+    C_LF_F_Y("c_3411",(byte)0x73),//可左前直行都行
+    C_LF_RF_Y_LF("c_3501",(byte)0x74),//可左前右前选择左前
+    C_LF_RF_Y_RF("c_3510",(byte)0x75),//可左前右前选择右前
+    C_LF_RF_Y("c_3511",(byte)0x76),//可左前右前都行
+    C_LF_R_Y_LF("c_3601",(byte)0x77),//可左前右拐选择左前
+    C_LF_R_Y_R("c_3610",(byte)0x78),//可左前右拐选择右拐
+    C_LF_R_Y("c_3611",(byte)0x79),//可左前右拐都行
+    C_RF_F_Y_F("c_4501",(byte)0x7A),//可直行右前选择直行
+    C_RF_F_Y_RF("c_4510",(byte)0x7B),//可直行右前选择右前
+    C_RF_F_Y("c_4511",(byte)0x7C),//可直行右前都行
+    C_R_F_Y_F("c_4601",(byte)0x7D),//可直行右拐选择直行
+    C_R_F_Y_R("c_4610",(byte)0x7E),//可直行右拐选择右拐
+    C_R_F_Y("c_4611",(byte)0x7F),//可直行右拐都行
+    C_R_RF_Y_RF("c_5601",(byte)0x80),//可右前右拐选择右前
+    C_R_RF_Y_R("c_5610",(byte)0x81),//可右前右拐选择右拐
+    C_R_RF_Y("c_5611",(byte)0x82),//可右前右拐都行
+    C_HIGH_Y("c_higha",(byte)0x83),//high选择
     ;
     String imageFileName;
     byte type;
@@ -91,6 +144,17 @@ public enum HudLaneType {
 
     public byte getType() {
         return type;
+    }
+
+
+    public HudLaneType getSelectType(){
+        String needFileName="c_"+imageFileName;
+        for(HudLaneType hudLaneType:values()){
+            if(needFileName.equals(hudLaneType.imageFileName)){
+                return hudLaneType;
+            }
+        }
+        return null;
     }
 
 
