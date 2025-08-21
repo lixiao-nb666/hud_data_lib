@@ -29,6 +29,10 @@ public class HudLaneHiPassCountBean implements Serializable {
         return index;
     }
 
+    public void setLaneList(List<Integer> laneList) {
+        this.laneList = laneList;
+    }
+
     @Override
     public String toString() {
         return "HudLaneHiPassCountBean{" +
