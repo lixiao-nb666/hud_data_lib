@@ -33,6 +33,10 @@ public class HudLaneHiPassCountBean implements Serializable {
         this.laneList = laneList;
     }
 
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
     @Override
     public String toString() {
         return "HudLaneHiPassCountBean{" +
