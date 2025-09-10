@@ -43,6 +43,8 @@ public enum HudCmdType {
     REACH_STR((byte)0x65),
     HIDE_INTERVAL_SPEED((byte)0x66),
     CLEAR_PROGRESS_BAR((byte)0x67),
+    SEND_SPEED((byte)0x68),
+    SEND_WARNING_POINT_SPEED((byte)0x69),
 //    SET_YELLOW_STATU_BJ((byte)0x70),
     SET_TURN_BJ((byte)0x71),
 //    SET_SPEEDING_BJ((byte)0x72),
