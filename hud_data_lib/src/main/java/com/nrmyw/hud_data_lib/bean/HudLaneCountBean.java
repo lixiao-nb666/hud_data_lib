@@ -37,6 +37,9 @@ public class HudLaneCountBean implements Serializable {
     }
 
     public int getLeftIndex() {
+        if(leftIndex>4){
+            leftIndex=4;
+        }
         return leftIndex;
     }
 
@@ -45,6 +48,9 @@ public class HudLaneCountBean implements Serializable {
     }
 
     public int getRightIndex() {
+        if(rightIndex>4){
+            rightIndex=4;
+        }
         return rightIndex;
     }
 
