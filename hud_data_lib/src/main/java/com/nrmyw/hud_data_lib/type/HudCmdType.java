@@ -50,6 +50,7 @@ public enum HudCmdType {
 //    SET_SPEEDING_BJ((byte)0x72),
     SET_BLE_NAME((byte)0x73),//设置BLE数据蓝牙名字
     SET_TWS_NAME((byte)0x74),//设置TWS蓝牙名字
+    SET_DISPLAY_RECT_SIZE((byte)0x75),//设置显示矩形的尺寸
     SET_UI((byte)80),//设置UI风格
     ;
     private byte title;
