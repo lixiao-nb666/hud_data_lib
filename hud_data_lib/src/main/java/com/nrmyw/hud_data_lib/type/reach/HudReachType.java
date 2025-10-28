@@ -9,6 +9,8 @@ public enum HudReachType {
     AM((byte)0x01),//早上的样式
     PM((byte)0x02),//下午的样式
     ARRIVAL((byte)0x03),//到达时间的样式
+    ARRIVAL_AM((byte)0x04),//到达时间的样式
+    ARRIVAL_PM((byte)0x05),//到达时间的样式
     ;
     byte type;
     HudReachType(byte type){
