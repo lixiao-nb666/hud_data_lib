@@ -2,7 +2,7 @@ package com.nrmyw.hud_data_lib.config;
 
 public class HudConfig {
 
-    public static final boolean isAutomatic = false;
+    public static final boolean isAutomatic = true;
     public static final int mtu = 517;
     public static final String ACTION_GATT_CONNECTED = "ACTION_GATT_CONNECTED";
     public static final String ACTION_GATT_DISCONNECTED = "ACTION_GATT_DISCONNECTED";
