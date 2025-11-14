@@ -52,6 +52,8 @@ public enum HudCmdType {
     SET_TWS_NAME((byte)0x74),//设置TWS蓝牙名字
     SET_DISPLAY_RECT_SIZE((byte)0x75),//设置显示矩形的尺寸
     SET_UI((byte)80),//设置UI风格
+
+    SET_BIG_TURN_TYPE_HIDE_AND_SHOW((byte)81),//大转向栏信息显示，隐藏
     ;
     private byte title;
 
