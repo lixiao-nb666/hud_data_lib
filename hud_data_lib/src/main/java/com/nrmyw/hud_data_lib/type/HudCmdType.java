@@ -32,6 +32,8 @@ public enum HudCmdType {
     RETRUN_IMAGE((byte)0x55),
     ICON_FLICKER((byte)0x13),//闪烁图标
     FACTORY_SET((byte)0x15),//工厂设置
+
+
     SET_DEVICE_SOUND_STATU((byte)0x16),//设置设备声音开关
     QUERY_DEVICE_SOUND_STATU((byte)0x17),//查询设备声音开关
     SET_DAYLIGHTING_SHOW_STATU((byte)0x18),//设置采光值开关
@@ -52,8 +54,9 @@ public enum HudCmdType {
     SET_TWS_NAME((byte)0x74),//设置TWS蓝牙名字
     SET_DISPLAY_RECT_SIZE((byte)0x75),//设置显示矩形的尺寸
     SET_UI((byte)0x80),//设置UI风格
-
     SET_BIG_TURN_TYPE_HIDE_AND_SHOW((byte)0x81),//大转向栏信息显示，隐藏
+    REBOOT((byte)0x82),
+    OTA((byte)0xA5)
     ;
     private byte title;
 
