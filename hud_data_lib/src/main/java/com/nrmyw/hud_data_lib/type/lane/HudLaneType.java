@@ -134,6 +134,63 @@ public enum HudLaneType {
     C_R_RF_Y_R("c_5610",(byte)0x81),//可右前右拐选择右拐
     C_R_RF_Y("c_5611",(byte)0x82),//可右前右拐都行
     C_HIGH_Y("c_higha",(byte)0x83),//high选择
+
+
+
+
+    //----分割线
+    D_LT_Y("d_11",(byte)0xA0),//左调头选择
+    D_L_Y("d_21",(byte)0xA1),//左转选择
+    D_LF_Y("d_31",(byte)0xA2),//左前选择
+    D_F_Y("d_41",(byte)0xA3),//直行选择
+    D_RF_Y("d_51",(byte)0xA4),//右前选择
+    D_R_Y("d_61",(byte)0xA5),//右拐选择
+    D_L_T_Y_T("d_1201",(byte)0xA6),//可左拐调头选择调头
+    D_L_T_Y_L("d_1210",(byte)0xA7),//可左拐调头选择左拐
+    D_L_T_Y("d_1211",(byte)0xA8),//可左拐调头都行
+    D_LF_T_Y_T("d_1301",(byte)0xA9),//可左前调头选择调头
+    D_LF_T_Y_LF("d_1310",(byte)0xAA),//可左前调头选择左前
+    D_LF_T_Y("d_1311",(byte)0xAB),//可左前调头都行
+    D_F_LT_Y_T("d_1401",(byte)0xAC),//可直行调头选择调头
+    D_F_LT_Y_F("d_1410",(byte)0xAE),//可直行调头选择直行
+    D_F_LT_Y("d_1411",(byte)0xAE),//可直行调头都行
+    D_LT_RF_Y_LT("d_1501",(byte)0xAF),//可左掉头右前选择调头
+    D_LT_RF_Y_RF("d_1510",(byte)0xB0),//可左掉头右前选择右前
+    D_LT_RF_Y("d_1511",(byte)0xB1),//可左掉头右前都行
+    D_R_T_Y_T("d_1601",(byte)0xB2),//可右拐调头选择调头
+    D_R_T_Y_R("d_1610",(byte)0xB3),//可右拐调头选择右拐
+    D_R_T_Y("d_1611",(byte)0xB4),//可右拐调头都行
+    D_L_LF_Y_L("d_2301",(byte)0xB5),//可左拐左前选择左拐
+    D_L_LF_Y_LF("d_2310",(byte)0xB6),//可左拐左前选择左前
+    D_L_LF_Y("d_2311",(byte)0xB7),//可左拐左前都行
+    D_L_F_Y_L("d_2401",(byte)0xB8),//可左拐直行选择左拐
+    D_L_F_Y_F("d_2410",(byte)0xB9),//可左拐直行选择直行
+    D_L_F_Y("d_2411",(byte)0xBA),//可左拐直行都行
+    D_L_RF_Y_L("d_2501",(byte)0xBB),//可左拐右前选择左拐
+    D_L_RF_Y_RF("d_2510",(byte)0xBC),//可左拐右前选择右前
+    D_L_RF_Y("d_2511",(byte)0xB6D),//可左拐右前都行
+    D_L_R_Y_L("d_2601",(byte)0xBE),//可左拐右拐选择左拐
+    D_L_R_Y_R("d_2610",(byte)0xBF),//可左拐右拐选择右拐
+    D_L_R_Y("d_2611",(byte)0xC0),//可左拐右拐都行
+    D_LF_F_Y_LF("d_3401",(byte)0xC1),//可左前直行选择左前
+    D_LF_F_Y_F("d_3410",(byte)0xC2),//可左前直行选择直行
+    D_LF_F_Y("d_3411",(byte)0xC3),//可左前直行都行
+    D_LF_RF_Y_LF("d_3501",(byte)0xC4),//可左前右前选择左前
+    D_LF_RF_Y_RF("d_3510",(byte)0xC5),//可左前右前选择右前
+    D_LF_RF_Y("d_3511",(byte)0xC6),//可左前右前都行
+    D_LF_R_Y_LF("d_3601",(byte)0xC7),//可左前右拐选择左前
+    D_LF_R_Y_R("d_3610",(byte)0xC8),//可左前右拐选择右拐
+    D_LF_R_Y("d_3611",(byte)0xC9),//可左前右拐都行
+    D_RF_F_Y_F("d_4501",(byte)0xCA),//可直行右前选择直行
+    D_RF_F_Y_RF("d_4510",(byte)0xCB),//可直行右前选择右前
+    D_RF_F_Y("d_4511",(byte)0xCC),//可直行右前都行
+    D_R_F_Y_F("d_4601",(byte)0xCD),//可直行右拐选择直行
+    D_R_F_Y_R("d_4610",(byte)0xCE),//可直行右拐选择右拐
+    D_R_F_Y("d_4611",(byte)0xCF),//可直行右拐都行
+    D_R_RF_Y_RF("d_5601",(byte)0xD0),//可右前右拐选择右前
+    D_R_RF_Y_R("d_5610",(byte)0xD1),//可右前右拐选择右拐
+    D_R_RF_Y("d_5611",(byte)0xD2),//可右前右拐都行
+    D_HIGH_Y("d_higha",(byte)0xD3),//high选择
     ;
     String imageFileName;
     byte type;
