@@ -58,7 +58,7 @@ public enum HudCmdType {
     REBOOT((byte)0x82),
     NEW_LANE_INFORMATION((byte)0x86),//车道信息显示
     NEW_TURN_TYPE((byte)0x87),//转向信息显示
-
+    NOTICICATION((byte)0x88),//信息提醒
 
 
 
