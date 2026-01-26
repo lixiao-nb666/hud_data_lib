@@ -56,6 +56,12 @@ public enum HudCmdType {
     SET_UI((byte)0x80),//设置UI风格
     SET_BIG_TURN_TYPE_HIDE_AND_SHOW((byte)0x81),//大转向栏信息显示，隐藏
     REBOOT((byte)0x82),
+    NEW_LANE_INFORMATION((byte)0x86),//车道信息显示
+    NEW_TURN_TYPE((byte)0x87),//转向信息显示
+
+
+
+
     OTA((byte)0xA5)
     ;
     private byte title;
