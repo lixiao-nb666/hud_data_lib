@@ -15,4 +15,21 @@ public class HudConfig {
     public static byte cmdt2=(byte) 0x5A;//T800固定要加的第二个字节
     public static byte end1=(byte) 0x0D;//T800文档要求要加，实际不加的
     public static byte end2=(byte) 0x0A;//T800文档要求要加，实际不加的
+
+
+    public static String getHudT700UpdateUrl(boolean isDebug){
+        if(isDebug){
+            return "https://hud-map.oss-cn-hongkong.aliyuncs.com/update/hut_700_gui_3_debug";
+        }else {
+            return "https://hud-map.oss-cn-hongkong.aliyuncs.com/update/hut_700_gui_3";
+        }
+    }
+
+    public static String getHudT900UpdateUrl(boolean isDebug){
+        if(isDebug){
+            return "https://hud-map.oss-cn-hongkong.aliyuncs.com/update/hut_900_gui_1_debug";
+        }else {
+            return "https://hud-map.oss-cn-hongkong.aliyuncs.com/update/hut_900_gui_1";
+        }
+    }
 }
