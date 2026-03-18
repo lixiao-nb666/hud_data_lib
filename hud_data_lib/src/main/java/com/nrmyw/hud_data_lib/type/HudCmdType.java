@@ -59,8 +59,8 @@ public enum HudCmdType {
     NEW_LANE_INFORMATION((byte)0x86),//车道信息显示
     NEW_TURN_TYPE((byte)0x87),//转向信息显示
     NOTIFICATION((byte)0x88),//信息提醒
-    LUMINANCE_PERCENT((byte)0x89),//信息提醒
-
+    LUMINANCE_PERCENT((byte)0x89),//亮度百分比
+    NOTIFICATION_ICON((byte)0x90),//信息提醒
 
     OTA((byte)0xA5)
     ;
