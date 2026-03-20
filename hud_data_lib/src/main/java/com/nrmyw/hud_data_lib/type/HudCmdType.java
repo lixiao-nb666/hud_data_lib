@@ -62,6 +62,12 @@ public enum HudCmdType {
     LUMINANCE_PERCENT((byte)0x89),//亮度百分比
     NOTIFICATION_ICON((byte)0x90),//信息提醒
 
+    TRANSLATIONING((byte)0x91),//信息提醒
+    TRANSLATIONING_RESULT((byte)0x92),//信息提醒
+    TRANSLATIONED((byte)0x93),//信息提醒
+    TRANSLATIONED_RESULT((byte)0x94),//信息提醒
+
+
     OTA((byte)0xA5)
     ;
     private byte title;
