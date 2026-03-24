@@ -47,6 +47,16 @@ public enum HudTurnType {
     tbt250((byte) 0x2B),//过船？？？
     undera((byte) 0x2C),//地下选中
     underb((byte) 0x2D),//地下未选中
+
+
+    //中文新增图标
+    c_154((byte) 0x60),//地下未选中
+    c_200((byte) 0x61),//地下未选中
+    c_201((byte) 0x62),//地下未选中
+    c_800((byte) 0x2D),//地下未选中
+    //英文新增图标
+    e_200((byte) 0x80),//地下未选中
+    e_201((byte) 0x81),//地下未选中
     ;
 
     byte type;
