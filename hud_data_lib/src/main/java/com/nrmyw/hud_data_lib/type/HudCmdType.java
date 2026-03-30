@@ -62,13 +62,24 @@ public enum HudCmdType {
     LUMINANCE_PERCENT((byte)0x89),//亮度百分比
     NOTIFICATION_ICON((byte)0x90),//信息提醒
 
-    TRANSLATIONING((byte)0x91),//信息提醒
-    TRANSLATIONING_RESULT((byte)0x92),//信息提醒
-    TRANSLATIONED((byte)0x93),//信息提醒
-    TRANSLATIONED_RESULT((byte)0x94),//信息提醒
+    OTA((byte)0xA5),
+    TRANSLATIONING((byte)0x91),//翻译中
+    TRANSLATIONING_RESULT((byte)0x92),//翻译中译文
+    TRANSLATIONED((byte)0x93),//翻译结束
+    TRANSLATIONED_RESULT((byte)0x94),//翻译结束译文
+
+    TRANSLATION_A_TO_B_NAME((byte)0x95),//翻译从什么语种到什么语种，会直接发送一个字符串，显示即可
+
+    CHANGE_MODE((byte)0xB0),//模式切换+模式内容1BYTE
+
+    HINT_STR((byte)0xB1),//提词器文本
+    CLEAR_NAVI((byte)0xB2),//调用断开蓝牙的方法，清空蓝牙到初始状态。不用隐藏速度
+
+    HIDE_SPEED((byte)0xB3),//隐藏速度
+
+    CLEAR_ALL((byte)0xB4),//清空全部
 
 
-    OTA((byte)0xA5)
     ;
     private byte title;
 
