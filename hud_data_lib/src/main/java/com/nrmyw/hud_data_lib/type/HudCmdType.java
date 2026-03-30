@@ -79,6 +79,8 @@ public enum HudCmdType {
 
     CLEAR_ALL((byte)0xB4),//清空全部
 
+    FUNCTION_SELECT((byte)0xB5),//功能选择
+
 
     ;
     private byte title;
