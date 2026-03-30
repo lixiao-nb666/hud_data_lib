@@ -1,13 +1,12 @@
 package com.nrmyw.hud_data_lib.type.function;
 
 public enum HudFunctionType {
-    TRANSLATION((byte)0x00),
-    HINT((byte)0x01),
-    NANI((byte)0x02),
-    RECORD_VIDEO((byte)0x03),
-    TAKE_PHOTO((byte)0x04),
-
-    
+    NONE((byte)0x00),
+    TRANSLATION((byte)0x01),
+    HINT((byte)0x02),
+    NANI((byte)0x03),
+    RECORD_VIDEO((byte)0x04),
+    TAKE_PHOTO((byte)0x05),
     ;
 
     private byte title;
