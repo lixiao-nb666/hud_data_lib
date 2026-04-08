@@ -2,37 +2,37 @@ package com.nrmyw.hud_data_lib.type.lane;
 
 public enum HudLaneType {
     NONE("none",(byte)0x00),//空格
-    BUS_Y("busa",(byte)0x01),//巴士选择
-    BUS_N_B("busb",(byte)0x02),//巴士未选择
+    BUS_Y("busa",(byte)0x01),//巴士选择,landfront_kk
+    BUS_N_B("busb",(byte)0x02),//巴士未选择，gd_landback_k
     BUS_N_D("busd",(byte)0x03),//巴士未选择，右边带条线
     HIGH_Y("higha",(byte)0x04),//high选择
     HIGH_N("highb",(byte)0x05),//hige未选择
-    L_N("20",(byte)0x06),//左转未选择
-    L_Y("21",(byte)0x07),//左转选择
+    L_N("20",(byte)0x06),//左转未选择,gd_landback_1
+    L_Y("21",(byte)0x07),//左转选择，gd_landfront_1
     LF_N("30",(byte)0x08),//左前未选择
     LF_Y("31",(byte)0x09),//左前选择
-    F_N("40",(byte)0x0A),//直行未选择
-    F_Y("41",(byte)0x0B),//直行选择
+    F_N("40",(byte)0x0A),//直行未选择,gd_landback_0
+    F_Y("41",(byte)0x0B),//直行选择，gd_landfront_0,gd_landfront_d,gd_landfront_dd
     RF_N("50",(byte)0x0C),//右前未选择
     RF_Y("51",(byte)0x0D),//右前选择
-    R_N("60",(byte)0x0E),//右拐未选择
-    R_Y("61",(byte)0x0F),//右拐选择
+    R_N("60",(byte)0x0E),//右拐未选择,gd_landback_3
+    R_Y("61",(byte)0x0F),//右拐选择，gd_landfront_3
     L_T_N("1200",(byte)0x10),//可左拐调头未选择
     L_T_Y_T("1201",(byte)0x11),//可左拐调头选择调头
     L_T_Y_L("1210",(byte)0x12),//可左拐调头选择左拐
     L_T_Y("1211",(byte)0x13),//可左拐调头都行
-    LF_T_N("1300",(byte)0x14),//可左前调头未选择
-    LF_T_Y_T("1301",(byte)0x15),//可左前调头选择调头
-    LF_T_Y_LF("1310",(byte)0x16),//可左前调头选择左前
-    LF_T_Y("1311",(byte)0x17),//可左前调头都行
-    F_LT_N("1400",(byte)0x18),//可直行调头未选择
-    F_LT_Y_T("1401",(byte)0x19),//可直行调头选择调头
-    F_LT_Y_F("1410",(byte)0x1A),//可直行调头选择直行
-    F_LT_Y("1411",(byte)0x1B),//可直行调头都行
-    LT_RF_N("1500",(byte)0x1C),//可左掉头右前未选择
-    LT_RF_Y_LT("1501",(byte)0x1D),//可左掉头右前选择调头
-    LT_RF_Y_RF("1510",(byte)0x1E),//可左掉头右前选择右前
-    LT_RF_Y("1511",(byte)0x1F),//可左掉头右前都行
+    LF_T_N("1300",(byte)0x14),//可左前调头未选择，gd_landback_b
+    LF_T_Y_T("1301",(byte)0x15),//可左前调头选择调头,gd_landfront_b5
+    LF_T_Y_LF("1310",(byte)0x16),//可左前调头选择左前,gd_landfront_b1
+    LF_T_Y("1311",(byte)0x17),//可左前调头都行,gd_landfront_bb
+    F_LT_N("1400",(byte)0x18),//可直行调头未选择，gd_landback_9
+    F_LT_Y_T("1401",(byte)0x19),//可直行调头选择调头,gd_landfront_95
+    F_LT_Y_F("1410",(byte)0x1A),//可直行调头选择直行,gd_landfront_90
+    F_LT_Y("1411",(byte)0x1B),//可直行调头都行,gd_landfront_99
+    LT_RF_N("1500",(byte)0x1C),//可左掉头右前未选择，gd_landback_g
+    LT_RF_Y_LT("1501",(byte)0x1D),//可左掉头右前选择调头,gd_landfront_g5
+    LT_RF_Y_RF("1510",(byte)0x1E),//可左掉头右前选择右前,gd_landfront_g3
+    LT_RF_Y("1511",(byte)0x1F),//可左掉头右前都行,gd_landfront_gg
     R_T_N("1600",(byte)0x20),//可右拐调头未选择
     R_T_Y_T("1601",(byte)0x21),//可右拐调头选择调头
     R_T_Y_R("1610",(byte)0x22),//可右拐调头选择右拐
@@ -41,18 +41,18 @@ public enum HudLaneType {
     L_LF_Y_L("2301",(byte)0x25),//可左拐左前选择左拐
     L_LF_Y_LF("2310",(byte)0x26),//可左拐左前选择左前
     L_LF_Y("2311",(byte)0x27),//可左拐左前都行
-    L_F_N("2400",(byte)0x28),//可左拐直行未选择
-    L_F_Y_L("2401",(byte)0x29),//可左拐直行选择左拐
-    L_F_Y_F("2410",(byte)0x2A),//可左拐直行选择直行
-    L_F_Y("2411",(byte)0x2B),//可左拐直行都行
+    L_F_N("2400",(byte)0x28),//可左拐直行未选择,gd_landback_2
+    L_F_Y_L("2401",(byte)0x29),//可左拐直行选择左拐，gd_landfront_21
+    L_F_Y_F("2410",(byte)0x2A),//可左拐直行选择直行，gd_landfront_20
+    L_F_Y("2411",(byte)0x2B),//可左拐直行都行，gd_landfront_22
     L_RF_N("2500",(byte)0x2C),//可左拐右前未选择
     L_RF_Y_L("2501",(byte)0x2D),//可左拐右前选择左拐
     L_RF_Y_RF("2510",(byte)0x2E),//可左拐右前选择右前
     L_RF_Y("2511",(byte)0x2F),//可左拐右前都行
-    L_R_N("2600",(byte)0x30),//可左拐右拐未选择
-    L_R_Y_L("2601",(byte)0x31),//可左拐右拐选择左拐
-    L_R_Y_R("2610",(byte)0x32),//可左拐右拐选择右拐
-    L_R_Y("2611",(byte)0x33),//可左拐右拐都行
+    L_R_N("2600",(byte)0x30),//可左拐右拐未选择，gd_landback_6
+    L_R_Y_L("2601",(byte)0x31),//可左拐右拐选择左拐,gd_landfront_61
+    L_R_Y_R("2610",(byte)0x32),//可左拐右拐选择右拐,gd_landfront_63
+    L_R_Y("2611",(byte)0x33),//可左拐右拐都行,gd_landfront_66
     LF_F_N("3400",(byte)0x34),//可左前直行未选择
     LF_F_Y_LF("3401",(byte)0x35),//可左前直行选择左前
     LF_F_Y_F("3410",(byte)0x36),//可左前直行选择直行
@@ -71,16 +71,16 @@ public enum HudLaneType {
     RF_F_Y("4511",(byte)0x43),//可直行右前都行
     R_F_N("4600",(byte)0x44),//可直行右拐未选择
     R_F_Y_F("4601",(byte)0x45),//可直行右拐选择直行
-    R_F_Y_R("4610",(byte)0x46),//可直行右拐选择右拐
-    R_F_Y("4611",(byte)0x47),//可直行右拐都行
+    R_F_Y_R("4610",(byte)0x46),//可直行右拐选择右拐，gd_landfront_43
+    R_F_Y("4611",(byte)0x47),//可直行右拐都行，gd_landfront_44
     R_RF_N("5600",(byte)0x48),//可右前右拐未选择
     R_RF_Y_RF("5601",(byte)0x49),//可右前右拐选择右前
     R_RF_Y_R("5610",(byte)0x4A),//可右前右拐选择右拐
     R_RF_Y("5611",(byte)0x4B),//可右前右拐都行
     D_Y("1",(byte)0x4C),//地下直行选择
     D_N("2",(byte)0x4D),//地下直行未选择
-    LT_N("10",(byte)0x4E),//左调头未选择
-    LT_Y("11",(byte)0x4F),//左调头选择
+    LT_N("10",(byte)0x4E),//左调头未选择，gd_landback_5
+    LT_Y("11",(byte)0x4F),//左调头选择,gd_landfront_55
     //----分割线
     C_LT_Y("c_11",(byte)0x50),//左调头选择
     C_L_Y("c_21",(byte)0x51),//左转选择
@@ -127,17 +127,14 @@ public enum HudLaneType {
     C_RF_F_Y_F("c_4501",(byte)0x7A),//可直行右前选择直行
     C_RF_F_Y_RF("c_4510",(byte)0x7B),//可直行右前选择右前
     C_RF_F_Y("c_4511",(byte)0x7C),//可直行右前都行
-    C_R_F_Y_F("c_4601",(byte)0x7D),//可直行右拐选择直行
-    C_R_F_Y_R("c_4610",(byte)0x7E),//可直行右拐选择右拐
+    C_R_F_Y_F("c_4601",(byte)0x7D),//可直行右拐选择直行，gd_landfront_40
+    C_R_F_Y_R("c_4610",(byte)0x7E),//可直行右拐选择右拐，gd_landback_4
     C_R_F_Y("c_4611",(byte)0x7F),//可直行右拐都行
     C_R_RF_Y_RF("c_5601",(byte)0x80),//可右前右拐选择右前
     C_R_RF_Y_R("c_5610",(byte)0x81),//可右前右拐选择右拐
     C_R_RF_Y("c_5611",(byte)0x82),//可右前右拐都行
     C_HIGH_Y("c_higha",(byte)0x83),//high选择
-
-
-
-
+    //8A-8F 给了高德图标使用，9全部给了高德
     //----分割线
     D_LT_Y("d_11",(byte)0xA0),//左调头选择
     D_L_Y("d_21",(byte)0xA1),//左转选择
@@ -191,6 +188,55 @@ public enum HudLaneType {
     D_R_RF_Y_R("d_5610",(byte)0xD1),//可右前右拐选择右拐
     D_R_RF_Y("d_5611",(byte)0xD2),//可右前右拐都行
     D_HIGH_Y("d_higha",(byte)0xD3),//high选择
+    //DA-DF 给了高德图标使用，9全部给了高德
+    gd_landback_7("gd_landback_0",(byte)0x90),
+    gd_landback_8("gd_landback_8",(byte)0x91),
+    gd_landback_a("gd_landback_a",(byte)0x92),
+    gd_landback_c("gd_landback_c",(byte)0x93),
+    gd_landback_d("gd_landback_d",(byte)0x94),
+    gd_landback_e("gd_landback_e",(byte)0x95),
+    gd_landback_f("gd_landback_f",(byte)0x96),
+    gd_landback_h("gd_landback_h",(byte)0x97),
+    gd_landback_i("gd_landback_i",(byte)0x98),
+    gd_landback_j("gd_landback_j",(byte)0x99),
+    gd_landback_l("gd_landback_l",(byte)0x9A),
+    gd_landback_ll("gd_landback_ll",(byte)0x9B),
+    //分开
+    gd_landfront_5("gd_landfront_5",(byte)0xE0),
+    gd_landfront_8("gd_landfront_8",(byte)0xE1),
+    gd_landfront_70("gd_landfront_70",(byte)0xE2),
+    gd_landfront_71("gd_landfront_71",(byte)0xE3),
+    gd_landfront_73("gd_landfront_73",(byte)0xE4),
+    gd_landfront_77("gd_landfront_77",(byte)0xE5),
+    gd_landfront_88("gd_landfront_88",(byte)0xE6),
+    gd_landfront_a0("gd_landfront_a0",(byte)0xE7),
+    gd_landfront_a8("gd_landfront_a8",(byte)0xE8),
+    gd_landfront_aa("gd_landfront_aa",(byte)0xE9),
+    gd_landfront_c3("gd_landfront_c3",(byte)0xEA),
+    gd_landfront_c8("gd_landfront_c8",(byte)0xEB),
+    gd_landfront_cc("gd_landfront_cc",(byte)0xEC),
+    gd_landfront_d("gd_landfront_d",(byte)0xED),
+    gd_landfront_e1("gd_landfront_e1",(byte)0xEE),
+    gd_landfront_e5("gd_landfront_e5",(byte)0xEF),
+    gd_landfront_ee("gd_landfront_ee",(byte)0xF0),
+    gd_landfront_f0("gd_landfront_f0",(byte)0xF1),
+    gd_landfront_f1("gd_landfront_f1",(byte)0xF2),
+    gd_landfront_f5("gd_landfront_f5",(byte)0xF3),
+    gd_landfront_ff("gd_landfront_ff",(byte)0xF4),
+    gd_landfront_h1("gd_landfront_h1",(byte)0xF5),
+    gd_landfront_h3("gd_landfront_h3",(byte)0xF6),
+    gd_landfront_h5("gd_landfront_h5",(byte)0xF7),
+    gd_landfront_hh("gd_landfront_hh",(byte)0xF8),
+    gd_landfront_i0("gd_landfront_i0",(byte)0xF9),
+    gd_landfront_i3("gd_landfront_i3",(byte)0xFA),
+    gd_landfront_i5("gd_landfront_i5",(byte)0xFB),
+    gd_landfront_ii("gd_landfront_ii",(byte)0xFC),
+    gd_landfront_j1("gd_landfront_j1",(byte)0xFD),
+    gd_landfront_j8("gd_landfront_j8",(byte)0xFE),
+    gd_landfront_jj("gd_landfront_jj",(byte)0xFF),
+    gd_landfront_ll("gd_landfront_ll",(byte)0x8A),
+    gd_landfront_lln("gd_landfront_lln",(byte)0x8B),
+    //这里还可以加8A-8F，DA-DF最多12个图标
     ;
     String imageFileName;
     byte type;
