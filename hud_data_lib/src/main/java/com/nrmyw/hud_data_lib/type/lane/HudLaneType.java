@@ -8,23 +8,23 @@ public enum HudLaneType {
     HIGH_Y("higha",(byte)0x04),//high选择
     HIGH_N("highb",(byte)0x05),//hige未选择
     L_N("20",(byte)0x06),//左转未选择,gd_landback_1
-    L_Y("21",(byte)0x07),//左转选择，gd_landfront_1
+    L_Y("21",(byte)0x07),//左转选择，gd_landfront_1,gd_landfront_11
     LF_N("30",(byte)0x08),//左前未选择
     LF_Y("31",(byte)0x09),//左前选择
     F_N("40",(byte)0x0A),//直行未选择,gd_landback_0
-    F_Y("41",(byte)0x0B),//直行选择，gd_landfront_0,gd_landfront_d,gd_landfront_dd
+    F_Y("41",(byte)0x0B),//直行选择，gd_landfront_0,gd_landfront_d
     RF_N("50",(byte)0x0C),//右前未选择
     RF_Y("51",(byte)0x0D),//右前选择
     R_N("60",(byte)0x0E),//右拐未选择,gd_landback_3
-    R_Y("61",(byte)0x0F),//右拐选择，gd_landfront_3
-    L_T_N("1200",(byte)0x10),//可左拐调头未选择
-    L_T_Y_T("1201",(byte)0x11),//可左拐调头选择调头
-    L_T_Y_L("1210",(byte)0x12),//可左拐调头选择左拐
-    L_T_Y("1211",(byte)0x13),//可左拐调头都行
-    LF_T_N("1300",(byte)0x14),//可左前调头未选择，gd_landback_b
-    LF_T_Y_T("1301",(byte)0x15),//可左前调头选择调头,gd_landfront_b5
-    LF_T_Y_LF("1310",(byte)0x16),//可左前调头选择左前,gd_landfront_b1
-    LF_T_Y("1311",(byte)0x17),//可左前调头都行,gd_landfront_bb
+    R_Y("61",(byte)0x0F),//右拐选择，gd_landfront_3,gd_landfront_33
+    L_T_N("1200",(byte)0x10),//可左拐调头未选择，gd_landback_b
+    L_T_Y_T("1201",(byte)0x11),//可左拐调头选择调头,gd_landfront_b5
+    L_T_Y_L("1210",(byte)0x12),//可左拐调头选择左拐,gd_landfront_b1
+    L_T_Y("1211",(byte)0x13),//可左拐调头都行,gd_landfront_bb
+    LF_T_N("1300",(byte)0x14),//可左前调头未选择
+    LF_T_Y_T("1301",(byte)0x15),//可左前调头选择调头
+    LF_T_Y_LF("1310",(byte)0x16),//可左前调头选择左前
+    LF_T_Y("1311",(byte)0x17),//可左前调头都行
     F_LT_N("1400",(byte)0x18),//可直行调头未选择，gd_landback_9
     F_LT_Y_T("1401",(byte)0x19),//可直行调头选择调头,gd_landfront_95
     F_LT_Y_F("1410",(byte)0x1A),//可直行调头选择直行,gd_landfront_90
@@ -189,7 +189,7 @@ public enum HudLaneType {
     D_R_RF_Y("d_5611",(byte)0xD2),//可右前右拐都行
     D_HIGH_Y("d_higha",(byte)0xD3),//high选择
     //DA-DF 给了高德图标使用，9全部给了高德
-    gd_landback_7("gd_landback_0",(byte)0x90),
+    gd_landback_7("gd_landback_7",(byte)0x90),
     gd_landback_8("gd_landback_8",(byte)0x91),
     gd_landback_a("gd_landback_a",(byte)0x92),
     gd_landback_c("gd_landback_c",(byte)0x93),
