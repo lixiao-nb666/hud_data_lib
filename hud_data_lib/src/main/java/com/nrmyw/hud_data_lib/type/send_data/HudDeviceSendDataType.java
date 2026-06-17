@@ -5,5 +5,6 @@ public enum HudDeviceSendDataType {
     T700_GUI3,
     T800,
     T900,
+    H5000,
 
 }
