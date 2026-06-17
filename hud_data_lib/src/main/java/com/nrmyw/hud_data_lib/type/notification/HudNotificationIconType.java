@@ -14,7 +14,7 @@ public enum HudNotificationIconType {
     STATION((byte)0x0A),
 
     ;
-
+ 
     byte type;
     HudNotificationIconType(byte type){
         this.type=type;
