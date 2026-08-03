@@ -32,8 +32,8 @@ public enum HudCmdType {
     RETRUN_IMAGE((byte)0x55),
     ICON_FLICKER((byte)0x13),//闪烁图标
     FACTORY_SET((byte)0x15),//工厂设置
-
-
+    DJ_YELLOW_WARNING_POINT_MSG((byte)0x20),//大加黄色状态栏控制
+    TURN_MSG_KOREAN((byte)0x21),//韩语转向栏提示消息
     SET_DEVICE_SOUND_STATU((byte)0x16),//设置设备声音开关
     QUERY_DEVICE_SOUND_STATU((byte)0x17),//查询设备声音开关
     SET_DAYLIGHTING_SHOW_STATU((byte)0x18),//设置采光值开关

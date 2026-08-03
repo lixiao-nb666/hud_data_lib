@@ -47,6 +47,7 @@ public enum HudTurnType {
     tbt250((byte) 0x2B),//过船？？？
     undera((byte) 0x2C),//地下选中
     underb((byte) 0x2D),//地下未选中
+    tbt2e((byte) 0x2E),//交叉2e图
 
 
     //中文新增图标
