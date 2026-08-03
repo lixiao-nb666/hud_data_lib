@@ -43,6 +43,16 @@ public enum HudWarningPointType {
 	chinter((byte) 0x26),//警告，可变区间管制（无法放文字）--------背景：紅色圓形，头部："가변"文字，中间："구간단속"文字
 
 	numb_21((byte) 0x27),//警告，??（无法放文字）--------背景：红色三角形，头部：空白（不能放文字），中间：上面21L图片，下面"과속다발"文字("과속다발"这个先不管)
+	numb_dj_new_1((byte) 0x28),//大加新增1
+	numb_dj_new_2((byte) 0x29),//大加新增2
+	numb_dj_new_3((byte) 0x2A),//大加新增3
+	numb_dj_new_4((byte) 0x2B),//大加新增4
+	numb_dj_new_5((byte) 0x2C),//大加新增5
+	numb_dj_new_6((byte) 0x2D),//大加新增6
+	numb_dj_new_7((byte) 0x2E),//大加新增7
+
+
+
 	numb_80((byte) 0x40),//
 	numb_81((byte) 0x41),//
 	numb_82((byte) 0x42),//
