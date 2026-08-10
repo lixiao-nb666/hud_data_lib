@@ -70,15 +70,19 @@ public enum HudCmdType {
 
     TRANSLATION_A_TO_B_NAME((byte)0x95),//翻译从什么语种到什么语种，会直接发送一个字符串，显示即可
 
-    CHANGE_MODE((byte)0xB0),//模式切换+模式内容1BYTE
+    TAKE_PHOTO((byte)0x96),//拍照
 
+    TAKE_VIDEO((byte)0x97),//录像
+
+    OPEN_OR_CLOSE_HOTPORT((byte)0x98),//开关热点
+    FACTORY_AGING_MODE((byte)0x99),//工厂老化模式
+    CHANGE_MODE((byte)0xB0),//模式切换+模式内容1BYTE
     HINT_STR((byte)0xB1),//提词器文本
     CLEAR_NAVI((byte)0xB2),//调用断开蓝牙的方法，清空蓝牙到初始状态。不用隐藏速度
 
     HIDE_SPEED((byte)0xB3),//隐藏速度
 
     CLEAR_ALL((byte)0xB4),//清空全部
-
     FUNCTION_SELECT((byte)0xB5),//功能选择
 
 
