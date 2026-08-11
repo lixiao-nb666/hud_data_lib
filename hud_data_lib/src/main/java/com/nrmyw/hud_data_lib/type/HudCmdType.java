@@ -76,6 +76,7 @@ public enum HudCmdType {
 
     OPEN_OR_CLOSE_HOTPORT((byte)0x98),//开关热点
     FACTORY_AGING_MODE((byte)0x99),//工厂老化模式
+    BRIGHTNESS_CONTROL((byte)0x9A),//工厂老化模式
     CHANGE_MODE((byte)0xB0),//模式切换+模式内容1BYTE
     HINT_STR((byte)0xB1),//提词器文本
     CLEAR_NAVI((byte)0xB2),//调用断开蓝牙的方法，清空蓝牙到初始状态。不用隐藏速度
