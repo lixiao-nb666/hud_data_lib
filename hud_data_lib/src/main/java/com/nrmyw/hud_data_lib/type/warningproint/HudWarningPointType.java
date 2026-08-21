@@ -53,11 +53,11 @@ public enum HudWarningPointType {
 
 
 
-	numb_80((byte) 0x40),//
-	numb_81((byte) 0x41),//
-	numb_82((byte) 0x42),//
-	numb_83((byte) 0x43),//
-	numb_84((byte) 0x44),//
+	numb_80((byte) 0x40),//图片编号80
+	numb_81((byte) 0x41),//图片编号81
+	numb_82((byte) 0x42),//图片编号82
+	numb_83((byte) 0x43),//图片编号83
+	numb_84((byte) 0x44),//空白图片，后面可以补充
 	//中文图标
 	c_10((byte) 0x60),//10号图标中文版本
 	c_11((byte) 0x61),//11号图标中文版本

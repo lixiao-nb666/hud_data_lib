@@ -63,10 +63,11 @@ public enum HudCmdType {
     NOTIFICATION_ICON((byte)0x90),//信息提醒
 
     OTA((byte)0xA5),
-    TRANSLATIONING((byte)0x91),//翻译中
-    TRANSLATIONING_RESULT((byte)0x92),//翻译中译文
-    TRANSLATIONED((byte)0x93),//翻译结束
-    TRANSLATIONED_RESULT((byte)0x94),//翻译结束译文
+    TRANSLATIONING_RESULT((byte)0x91),//翻译中译文
+    TRANSLATIONING((byte)0x92),//翻译中
+    TRANSLATIONED_RESULT((byte)0x93),//翻译结束译文
+
+    TRANSLATIONED((byte)0x94),//翻译结束
 
     TRANSLATION_A_TO_B_NAME((byte)0x95),//翻译从什么语种到什么语种，会直接发送一个字符串，显示即可
 
@@ -76,7 +77,9 @@ public enum HudCmdType {
 
     OPEN_OR_CLOSE_HOTPORT((byte)0x98),//开关热点
     FACTORY_AGING_MODE((byte)0x99),//工厂老化模式
-    BRIGHTNESS_CONTROL((byte)0x9A),//工厂老化模式
+    BRIGHTNESS_CONTROL((byte)0x9A),//背光控制
+
+    OPEN_OR_CLOSE_TRANSLATION_UI((byte)0x9B),//开启或者关闭UI翻译
     CHANGE_MODE((byte)0xB0),//模式切换+模式内容1BYTE
     HINT_STR((byte)0xB1),//提词器文本
     CLEAR_NAVI((byte)0xB2),//调用断开蓝牙的方法，清空蓝牙到初始状态。不用隐藏速度
