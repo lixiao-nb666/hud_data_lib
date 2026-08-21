@@ -80,6 +80,8 @@ public enum HudCmdType {
     BRIGHTNESS_CONTROL((byte)0x9A),//背光控制
 
     OPEN_OR_CLOSE_TRANSLATION_UI((byte)0x9B),//开启或者关闭UI翻译
+
+    TIME_STR((byte)0x9C),//发送时间
     CHANGE_MODE((byte)0xB0),//模式切换+模式内容1BYTE
     HINT_STR((byte)0xB1),//提词器文本
     CLEAR_NAVI((byte)0xB2),//调用断开蓝牙的方法，清空蓝牙到初始状态。不用隐藏速度
