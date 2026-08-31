@@ -82,8 +82,12 @@ public enum HudCmdType {
     OPEN_OR_CLOSE_TRANSLATION_UI((byte)0x9B),//开启或者关闭UI翻译
 
     TIME_STR((byte)0x9C),//发送时间
-    CHANGE_MODE((byte)0xB0),//模式切换+模式内容1BYTE
-    HINT_STR((byte)0xB1),//提词器文本
+    HOT_SPOT((byte)0x9D),//热点
+    HINT_LAST_STR((byte)0x9E),//模式切换+模式内容1BYTE
+    HINT_STR((byte)0x0F),//提词器文本
+    HINT_LAST_STR_HUD((byte)0x91),//模式切换+模式内容1BYTE
+    HINT_STR_HUD((byte)0x92),//模式切换+模式内容1BYTE
+
     CLEAR_NAVI((byte)0xB2),//调用断开蓝牙的方法，清空蓝牙到初始状态。不用隐藏速度
 
     HIDE_SPEED((byte)0xB3),//隐藏速度
