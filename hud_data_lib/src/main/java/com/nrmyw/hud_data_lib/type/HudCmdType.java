@@ -82,7 +82,7 @@ public enum HudCmdType {
     OPEN_OR_CLOSE_TRANSLATION_UI((byte)0x9B),//开启或者关闭UI翻译
 
     TIME_STR((byte)0x9C),//发送时间
-    HOT_SPOT((byte)0x9D),//热点
+    CHANGE_SHOW_MODE((byte)0x9D),//切换显示模型
     HINT_LAST_STR((byte)0x9E),//模式切换+模式内容1BYTE
     HINT_STR((byte)0x0F),//提词器文本
     HINT_LAST_STR_HUD((byte)0x91),//模式切换+模式内容1BYTE
