@@ -37,6 +37,7 @@ public enum HudCmdType {
     SET_DEVICE_SOUND_STATU((byte)0x16),//设置设备声音开关
     QUERY_DEVICE_SOUND_STATU((byte)0x17),//查询设备声音开关
     SET_DAYLIGHTING_SHOW_STATU((byte)0x18),//设置采光值开关
+    WARNING_POINT_PASSING((byte)0x50),//功能选择
     YELLOW_STATU_STR((byte)0x60),//设置黄色状态栏的值
     WARNING_POINT_1_T_STR((byte)0x61),
     WARNING_POINT_1_B_STR((byte)0x62),
@@ -95,7 +96,7 @@ public enum HudCmdType {
     CLEAR_ALL((byte)0xB4),//清空全部
     FUNCTION_SELECT((byte)0xB5),//功能选择
 
-    WARNING_POINT_PASSING((byte)0xB9),//功能选择
+
     ;
     private byte title;
 
