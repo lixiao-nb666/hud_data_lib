@@ -43,21 +43,25 @@ public enum HudWarningPointType {
 	chinter((byte) 0x26),//警告，可变区间管制（无法放文字）--------背景：紅色圓形，头部："가변"文字，中间："구간단속"文字
 
 	numb_21((byte) 0x27),//警告，??（无法放文字）--------背景：红色三角形，头部：空白（不能放文字），中间：上面21L图片，下面"과속다발"文字("과속다발"这个先不管)
-	numb_dj_new_1((byte) 0x28),//大加新增1
-	numb_dj_new_2((byte) 0x29),//大加新增2
-	numb_dj_new_3((byte) 0x2A),//大加新增3
-	numb_dj_new_4((byte) 0x2B),//大加新增4
-	numb_dj_new_5((byte) 0x2C),//大加新增5
-	numb_dj_new_6((byte) 0x2D),//大加新增6
-	numb_dj_new_7((byte) 0x2E),//大加新增7
+	numb_dj_77((byte) 0x27),//大加新增77
+	numb_dj_78((byte) 0x28),//大加新增78
+	numb_dj_79((byte) 0x29),//大加新增79
+	numb_dj_80((byte) 0x2A),//大加新增80
+	numb_dj_81((byte) 0x2B),//大加新增81
+	numb_dj_82((byte) 0x2C),//大加新增82
+	numb_dj_83((byte) 0x2D),//大加新增83
+	numb_dj_84((byte) 0x2E),//大加新增84
 
 
 
-	numb_80((byte) 0x40),//图片编号80
-	numb_81((byte) 0x41),//图片编号81
-	numb_82((byte) 0x42),//图片编号82
-	numb_83((byte) 0x43),//图片编号83
-	numb_84((byte) 0x44),//空白图片，后面可以补充
+	numb_77((byte) 0x40),//图片编号77
+	numb_78((byte) 0x41),//图片编号78
+	numb_79((byte) 0x42),//图片编号79
+	numb_81((byte) 0x43),//图片编号81
+	numb_82((byte) 0x44),//图片编号82
+	numb_83((byte) 0x45),//图片编号83
+	numb_80((byte) 0x42),//图片编号80
+	numb_84((byte) 0x18),//图片编号84
 	//中文图标
 	c_10((byte) 0x60),//10号图标中文版本
 	c_11((byte) 0x61),//11号图标中文版本
