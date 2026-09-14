@@ -29,6 +29,7 @@ public enum HudCmdType {
     READY_SEND_IMAGE((byte)0x10),//发送图片
     SHOW_IMAGE((byte)0x11),//显隐实景图
     YELLOW_STATU((byte)0x12),//显隐实景图
+    WARNING_POINT_YELLOW_STATU((byte)0x12),//显隐实景图
     RETRUN_IMAGE((byte)0x55),
     ICON_FLICKER((byte)0x13),//闪烁图标
     FACTORY_SET((byte)0x15),//工厂设置
@@ -54,7 +55,8 @@ public enum HudCmdType {
     SET_BLE_NAME((byte)0x73),//设置BLE数据蓝牙名字
     SET_TWS_NAME((byte)0x74),//设置TWS蓝牙名字
     SET_DISPLAY_RECT_SIZE((byte)0x75),//设置显示矩形的尺寸
-    WARNING_POINT_YELLOW_STATU((byte)0x76),//显隐实景图
+
+    TITLE_YELLOW_STATU((byte)0x76),//显隐实景图
     SET_UI((byte)0x80),//设置UI风格
     SET_BIG_TURN_TYPE_HIDE_AND_SHOW((byte)0x81),//大转向栏信息显示，隐藏
     REBOOT((byte)0x82),
