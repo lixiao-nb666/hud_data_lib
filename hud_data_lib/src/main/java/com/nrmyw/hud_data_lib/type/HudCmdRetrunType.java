@@ -10,6 +10,8 @@ public enum HudCmdRetrunType {
     GET_GPS_SPEED((byte)0xFD),//GPS速度比例值
     GET_ACK_SIZE((byte)0x55),//获得包的大小
     GET_DEVICE_SOUND_STATU((byte)0x17),//获得包的大小
+
+    BUTTON_RESTART((byte)0xF9),//按键重启事件
     ;
     byte type;
     HudCmdRetrunType(byte type){
