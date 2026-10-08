@@ -51,7 +51,7 @@ public enum HudWarningPointType {
 	numb_dj_82((byte) 0x2C),//大加新增82
 	numb_dj_83((byte) 0x2D),//大加新增83
 	numb_dj_84((byte) 0x2E),//大加新增84
-
+	numb_dj_85((byte) 0x2F),//大加新增84
 
 
 	numb_77((byte) 0x40),//图片编号77
@@ -62,6 +62,7 @@ public enum HudWarningPointType {
 	numb_83((byte) 0x45),//图片编号83
 	numb_80((byte) 0x42),//图片编号80
 	numb_84((byte) 0x18),//图片编号84
+	numb_85((byte) 0x46),//图片编号85
 	//中文图标
 	c_10((byte) 0x60),//10号图标中文版本
 	c_11((byte) 0x61),//11号图标中文版本
