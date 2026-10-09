@@ -87,12 +87,7 @@ public class HudRetrunEventSubscriptionSubject implements HudRetrunEventSubject 
         }
     }
 
-    @Override
-    public void nowIsButtonRestart() {
-        for (HudRetrunEventObserver observer:observers){
-            observer.nowIsButtonRestart();
-        }
-    }
+
 
 
 }

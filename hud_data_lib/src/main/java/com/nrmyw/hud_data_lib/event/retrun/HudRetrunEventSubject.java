@@ -33,7 +33,6 @@ public interface HudRetrunEventSubject {
 
     public void getGPSSpeed(int v);
 
-    //现在是按键重启
-    public void nowIsButtonRestart();
+
 
 }

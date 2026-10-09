@@ -29,7 +29,6 @@ public interface HudRetrunEventObserver {
     //获得GPS速度比值
     public void getGPSSpeed(int v);
 
-    //现在是按键重启
-    public void nowIsButtonRestart();
+
 
 }
