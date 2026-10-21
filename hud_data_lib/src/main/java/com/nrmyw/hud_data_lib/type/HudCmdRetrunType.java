@@ -12,6 +12,13 @@ public enum HudCmdRetrunType {
     GET_DEVICE_SOUND_STATU((byte)0x17),//获得包的大小
 
     BUTTON_RESTART((byte)0xF9),//按键重启事件
+
+
+    AR_GLASSES_DEF_MOLD((byte)0xF8),//默认模式,能拍照，能显示
+    AR_GLASSES_HOTSPOT_MOLD((byte)0xF7),//热点模式，不能显示
+
+    AR_GLASSES_RECORD_MOLD((byte)0xF6),//录像模式，不能显示
+
     ;
     byte type;
     HudCmdRetrunType(byte type){
